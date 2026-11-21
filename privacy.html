@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aglio privacy policy</title>
+<meta name="description" content="What Aglio keeps, what it sends where, and how to remove it.">
+<link rel="canonical" href="https://aglio.app/privacy.html">
+<link rel="icon" href="/img/icon-64.png" sizes="64x64">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="36" height="36">Aglio</a>
+    <nav class="menu" aria-label="Site"><a href="/">Home</a><a href="/privacy.html">Privacy</a></nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap prose">
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated: 21 November 2026. Aglio is made by Barton Studio Ltd, a company registered in England and Wales (company number 17560586), which is the data controller. Questions to <a href="mailto:hello@aglio.app">hello@aglio.app</a>.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>Aglio keeps your recipes, plans, shopping lists, preferences and photos so that everyone in your household sees the same thing on every phone.</li>
+      <li>It never sees your supermarket password. You sign in on the supermarket's own website, inside the app, and that session stays on your phone.</li>
+      <li>Recipe text and cookbook photos you choose to import, preferences you write in your own words, and the names of products to choose between, are sent to an AI service to be read. Nothing else is.</li>
+      <li>Aglio doesn't show adverts, doesn't sell data, and doesn't track you across other apps or websites.</li>
+      <li>Delete your account from the app and everything above is removed.</li>
+    </ul>
+
+    <h2>What Aglio keeps, and why</h2>
+    <h3>Your account</h3>
+    <p>You sign in with Google. Aglio keeps the name, email address and account identifier Google provides: the email address and identifier to know which household is yours, and your first name to show the others in your household who is who. Google also sends the web address of your profile picture, which Aglio discards without keeping. Aglio doesn't receive your Google password.</p>
+    <p>Aglio asks you to sign in before you use it. Your plans, shopping list, recipes and preferences are kept in your account on Aglio's server, so that they are on every phone you sign in on and can be shared with your household.</p>
+    <p>Earlier versions of the app could plan meals and keep a shopping list without signing in. On a phone still running one, plans, list and recipes stay on the phone until someone signs in. Those versions could also have preferences written in your own words read by Aglio AI before signing in. That has been switched off, and the text was never kept. What remains of it is a random identifier each of those apps made up for itself, with a count of its readings; it says nothing about you or your phone.</p>
+    <h3>Your household's data</h3>
+    <p>Recipes (including ones you import or photograph), meal plans and their history, shopping lists, product choices, cupboard items, preferences in your own words and the rules read from them, your chosen supermarket, favourites, and photos you add to recipes. This is what the app is for: it's stored so that it's the same on both phones in a household and survives a lost phone. It's visible only to the members of your household.</p>
+    <h3>Usage counts</h3>
+    <p>How many AI-assisted imports, preference readings and product picks your household has made, so that the weekly and daily allowances can be applied. Aglio also keeps the time of each AI request, without its content, to decide how to cache instructions efficiently. It keeps too, month by month, how much AI work each household's requests took, to see what Aglio AI costs to run.</p>
+    <p>Aglio also counts, by day and without recording who, how basket runs at each supermarket went (how many items went in, weren't found or failed), how often Aglio Plus is offered and Google's payment sheet opened, and how that ended, the answer to the one-tap question asked when a free period ends, and how often the app asks you to sign in and for what, how often that's tapped and how often it ends in signing in. It counts likewise how many phones set a planning day and what its reminders led to, and how often a shop done by hand is marked done. These counts show what to fix and improve; they can't be traced back to you or your household.</p>
+    <h3>Subscriptions</h3>
+    <p>For your household's free fortnight of Aglio Plus, Aglio keeps when it started and what started it, any days added to it and why, and when the household last used its free basket fill of the month, so each is given once.</p>
+    <p>So that the fortnight is had once a household rather than once an account, Aglio also keeps a one-way hash of your Google account identifier, and a one-way hash of an identifier Android gives Aglio on your phone (it stays the same until the phone is reset), with each household they have been used in. A new household made from the same Google account, or on the same phone, carries on that household's fortnight instead of starting another, as a household someone moves out to does. The hashes can't be turned back into the identifiers, and they're used for nothing else.</p>
+    <p>If you share Aglio with a friend, your household has a short code that goes in the link you send. If a household uses a friend's code, Aglio records which household's code it was and when, to give both households their free month, and nothing more: neither household sees anything of the other's. The Play Store tells Aglio which link it was installed from, which is how the code arrives without being typed. An invite to join a household arrives the same way, in the link the person inviting you sends.</p>
+    <p>If you buy Aglio Plus, Google Play handles the payment. Aglio keeps the purchase token Google issues, the subscription's state and when it next renews, and a one-way hash of your account identifier that Google uses to confirm the purchase is yours. Aglio never sees your card.</p>
+    <h3>Error reports</h3>
+    <p>If something goes wrong in the app or on the server, a report is sent to Sentry (error monitoring) with the error, the app version and the device model. Reports don't include your recipes, lists or account email. The app sends at most one report of each kind a day. Sentry also counts the app's sessions for each version, under a random identifier for the app on your phone rather than your account, to show how many end in a crash.</p>
+
+    <h2>Where it goes</h2>
+    <ul>
+      <li><strong>Supabase</strong> hosts Aglio's database, file storage and server functions, in Ireland. Your household's data lives here.</li>
+      <li><strong>Anthropic</strong> provides the AI that reads recipes, understands preferences and picks products. Aglio sends it the recipe text or photos you import, your preferences text, and product names and prices to choose between. Anthropic processes these to answer and, under its commercial terms, doesn't use them to train its models.</li>
+      <li><strong>Google</strong> provides sign-in and, for Aglio Plus, Google Play billing.</li>
+      <li><strong>Sentry</strong> receives error reports, as above, and keeps them in Germany.</li>
+      <li><strong>Your supermarket</strong> (Tesco, Sainsbury's, Asda, Morrisons or Waitrose) is where product searches run and your basket is filled. Searches and the basket go to the supermarket from your phone, through its website, under your own supermarket account; the supermarket's own privacy policy covers what it does with them. Aglio's server keeps which product was chosen for which ingredient, so that choice can be shared with other households, but not what you bought or when.</li>
+    </ul>
+    <p>Aglio doesn't share your data with anyone else, doesn't sell it, and doesn't use it for advertising.</p>
+    <p>Anthropic is a US company and may read what's sent to it in the United States. That transfer is made under the safeguards UK data protection law requires, which are set out in Anthropic's data processing terms.</p>
+
+    <h2>Shared product picks</h2>
+    <p>When Aglio AI picks a supermarket product for an ingredient, that pick (the ingredient, the supermarket, the product's name and link) is kept and reused for every household, so the same question needn't be asked twice. These picks don't include who asked.</p>
+
+    <h2>Your household</h2>
+    <p>Inviting someone to your household shares your recipe book, plans, shopping list, preferences and favourites with them, and theirs with you, and shows each of you the other's name and whether they pay for Plus. Anyone can leave from the Account page, taking the recipes they added. The household's owner can remove a member.</p>
+
+    <h2>Keeping and deleting</h2>
+    <p>Your data is kept while you have an account. <strong>Delete account</strong> on the Account page (or <a href="/delete-account.html">a request by email</a>) removes your account, and your household's recipes, plans, lists, preferences and photos if you were its only member; if others remain, the household's shared data stays with them and your membership is removed. Deleting your account stops an Aglio Plus subscription you pay for from renewing. One thing stays for a while: the hashes kept for the free fortnight, with when that fortnight ran, the days added to it and when the free basket fill was last used, and nothing else of the household. They're kept for a year after the fortnight ended (or after the account was deleted, if that's later), so that it isn't had again by deleting the account and signing in again, and then removed. A household that never had its free fortnight leaves nothing. Your Aglio AI usage counts from the last 31 days are kept with the same hashes, so that the allowances aren't had again the same way; counts older than 31 days are no longer used and are cleared out. Error reports are kept by Sentry for 90 days. Backups of the database are kept for up to 90 days and then removed.</p>
+
+    <h2>The legal basis</h2>
+    <p>Aglio uses your account, your household's data and your subscription to provide the app you've signed up for, which is the contract between you and Aglio. It keeps usage counts, error reports and the hashes described above because it has a legitimate interest in keeping the app working, improving it, and making sure its free periods and allowances are had once.</p>
+
+    <h2>Your rights</h2>
+    <p>Under UK data protection law you can ask for a copy of your data, have it corrected or deleted, or object to how it's used. Most of this you can do in the app; for anything else, email <a href="mailto:hello@aglio.app">hello@aglio.app</a>. You can also complain to the Information Commissioner's Office (ico.org.uk).</p>
+
+    <h2>Children</h2>
+    <p>Aglio is for adults doing a household's shopping and isn't aimed at children under 16.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes in a way that matters, the app will say so. The date at the top is when it last changed.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Aglio · a meal planner for UK households · Android</div>
+    <div><a href="/">Home</a> · <a href="mailto:hello@aglio.app">hello@aglio.app</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
